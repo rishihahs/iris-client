@@ -25,14 +25,12 @@ module.exports = function(grunt) {
 
         copy: {
             main: {
-                files: [
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: ['release/build/user/iris-chat-user.js', 'release/build/representative/iris-chat-representative.js'],
-                        dest: 'release/'
-                    }
-                ]
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['release/build/user/iris-chat-user.js', 'release/build/representative/iris-chat-representative.js'],
+                    dest: 'release/'
+                }]
             }
         },
 
@@ -48,16 +46,28 @@ module.exports = function(grunt) {
                     'release/iris-chat-representative.js': 'release/iris-chat-representative.js'
                 }
             }
+        },
+
+        compass: {
+            compile: {
+                options: {
+                    sassDir: 'stylesheets',
+                    cssDir: 'release',
+                    specify: ['stylesheets/iris-chat-styles.scss'],
+                    environment: 'production'
+                }
+            }
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
+    // Load the plugin that provides the "beautify" task.
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-compass');
 
     // Default task(s).
-    grunt.registerTask('default', ['requirejs', 'copy', 'clean', 'uglify']);
+    grunt.registerTask('default', ['requirejs', 'copy', 'clean', 'uglify', 'compass']);
 
 };
