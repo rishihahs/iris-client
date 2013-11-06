@@ -14,6 +14,10 @@ $color_5: #e6e6e6;
 .iris-chat-module {
 	width: 300px;
 	margin: 20px auto;
+	position: fixed;
+	margin: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .iris-chat-top-bar {
@@ -23,6 +27,7 @@ $color_5: #e6e6e6;
 	height: 20px;
 	h1 {
 		display: inline;
+		cursor: pointer;
 		font-size: 1.1em;
 	}
 	.iris-chat-left {
@@ -32,6 +37,10 @@ $color_5: #e6e6e6;
 		float: right;
 		padding-top: 5px;
 	}
+}
+
+.iris-chat-content {
+	display: none;
 }
 
 .iris-chat-discussion {
