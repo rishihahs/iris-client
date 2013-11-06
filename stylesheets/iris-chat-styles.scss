@@ -71,16 +71,20 @@ $color_5: #e6e6e6;
 	background: $color_3;
 	padding: 10px;
 	height: 30px;
-	input {
-		border: none;
-		width: 80%;
+
+	form {
 		height: 100%;
-	}
-	button {
-		border: 1px solid $color_4;
-		background: $color_5;
-		height: 100%;
-		float: right;
+		input {
+			border: none;
+			width: 80%;
+			height: 100%;
+		}
+		button {
+			border: 1px solid $color_4;
+			background: $color_5;
+			height: 100%;
+			float: right;
+		}
 	}
 }
 .iris-chat-self .iris-chat-messages {
