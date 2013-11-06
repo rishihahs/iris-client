@@ -11,12 +11,15 @@ module.exports = function(grunt) {
                     mainConfigFile: "lib/config.js",
                     dir: "release/build",
                     optimize: "none",
-                    modules: [{
-                            name: 'user/iris-chat-user'
+                    modules: [
+                        {
+                            name: 'user/iris-chat-user',
+                            include: ['deps/almond']
                         },
 
                         {
-                            name: 'representative/iris-chat-representative'
+                            name: 'representative/iris-chat-representative',
+                            include: ['deps/almond']
                         }
                     ],
                 }
@@ -41,10 +44,17 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             main: {
-                files: {
-                    'release/iris-chat-user.js': 'release/iris-chat-user.js',
-                    'release/iris-chat-representative.js': 'release/iris-chat-representative.js'
-                }
+                files: [
+                    {
+                        src: ['release/iris-chat-user.js', 'lib/user/run.js'],
+                        dest: 'release/iris-chat-user.js'
+                    },
+
+                    {
+                        src: ['release/iris-chat-representative.js', 'lib/representative/run.js'],
+                        dest: 'release/iris-chat-representative.js'
+                    }
+                ]
             }
         },
 
