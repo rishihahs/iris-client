@@ -11,11 +11,12 @@ $color_4: #c0c0c0;
 $color_5: #e6e6e6;
 //--------------------------
 
-.module {
+.iris-chat-module {
 	width: 300px;
 	margin: 20px auto;
 }
-.top-bar {
+
+.iris-chat-top-bar {
 	background: $color_0;
 	color: white;
 	padding: 0.5em;
@@ -24,19 +25,16 @@ $color_5: #e6e6e6;
 		display: inline;
 		font-size: 1.1em;
 	}
-	.typicons-message {
-		display: block;
-		padding: 0;
-	}
-	.left {
+	.iris-chat-left {
 		float: left;
 	}
-	.right {
+	.iris-chat-right {
 		float: right;
 		padding-top: 5px;
 	}
 }
-.discussion {
+
+.iris-chat-discussion {
 	list-style: none;
 	background: $color_1;
 	margin: 0;
@@ -46,7 +44,7 @@ $color_5: #e6e6e6;
 		overflow: hidden;
 	}
 }
-.messages {
+.iris-chat-messages {
 	background: white;
 	padding: 10px;
 	@include border-radius(2px);
@@ -55,12 +53,12 @@ $color_5: #e6e6e6;
 		font-size: 0.8em;
 		margin: 0 0 0.2em 0;
 	}
-	.time {
+	.iris-chat-time {
 		font-size: 0.7em;
 		color: $color_2;
 	}
 }
-.footer {
+.iris-chat-footer {
 	background: $color_3;
 	padding: 10px;
 	height: 30px;
@@ -76,6 +74,6 @@ $color_5: #e6e6e6;
 		float: right;
 	}
 }
-.self .messages {
+.iris-chat-self .iris-chat-messages {
 	@include border-bottom-right-radius(0);
 }
