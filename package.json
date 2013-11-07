@@ -1,14 +1,14 @@
 {
-  "name": "iris-chat",
+  "name": "iris-client",
   "version": "0.0.1",
-  "description": "Chat client libraries for iris.",
+  "description": "Client libraries for iris.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rishihahs/iris-chat.git"
+    "url": "https://github.com/rishihahs/iris-client.git"
   },
   "keywords": [
     "chat",
@@ -17,14 +17,13 @@
   "author": "Rishi Shah <rishihahs@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rishihahs/iris-chat/issues"
+    "url": "https://github.com/rishihahs/iris-client/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-requirejs": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.5",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-compass": "~0.6.0"
   }
 }
