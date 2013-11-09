@@ -90,3 +90,10 @@ $color_5: #e6e6e6;
 .iris-chat-self .iris-chat-messages {
 	@include border-bottom-right-radius(0);
 }
+
+.iris-cursor {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #bada55;
+}
