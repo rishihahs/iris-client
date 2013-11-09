@@ -1,6 +1,6 @@
 (function() {
 
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://irisapp.herokuapp.com');
 
     socket.on('connect', function() {
         // socket connected
