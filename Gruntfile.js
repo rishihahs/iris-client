@@ -15,6 +15,10 @@ module.exports = function(grunt) {
                         {
                             name: 'chat/chat',
                             include: ['deps/almond']
+                        },
+
+                        {
+                            name: 'cobrowsing/cobrowsing'
                         }
                     ],
                 }
@@ -28,7 +32,7 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {
-                        src: ['release/build/chat/chat.js', 'lib/chat/run.js'],
+                        src: ['release/build/chat/chat.js', 'release/build/cobrowsing/cobrowsing.js', 'lib/chat/run.js'],
                         dest: 'release/iris.js'
                     }
                 ]
