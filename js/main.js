@@ -12,14 +12,25 @@
 
     socket.on('newCitizen', function(data) {
         var room = data.room;
+        var url = data.url;
         // server emitted a custom event
 
-        $('.requests').prepend('<div class="request" data-room="' + room + '"><h4>' + formatDate() + '</h4></div>');
+        if (url.indexOf('#') < 0) {
+            url += '#';
+        }
+        url += 'iris-room=' + room;
+
+        $('.requests').prepend('<div class="request"><h4><a target="_blank" href="' + url + '">' + formatDate() + '</a></h4></div>');
         none();
     });
 
     socket.on('disconnect', function() {
         // socket disconnected
+    });
+
+    $('.requests').on('click', '.request a', function() {
+        $(this).parent().parent().remove();
+        none();
     });
 
     function none() {
