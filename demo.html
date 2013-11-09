@@ -627,7 +627,13 @@ ebRand = ebRand * 1000000;
 document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=366487&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
 //]]>
 </script>
-<script src="https://raw.github.com/rishihahs/iris-client/master/release/iris.js"></script>
+<script>
+  (function() {
+    var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+    sc.src = 'https://raw.github.com/rishihahs/iris-client/master/release/iris.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
+  })();
+</script>
 <noscript>
 <img width="1" height="1" style="border:0" src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=366487&amp;ns=1"/>
 </noscript>
