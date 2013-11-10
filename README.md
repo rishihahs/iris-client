@@ -20,3 +20,5 @@ Works best with two computers (or screens), with one representing citizen and th
 2. Open the help desk, [http://rishihahs.github.io/iris-client](http://rishihahs.github.io/iris-client) on the support rep computer.
 3. On the citizen computer, click 'Citizen Support' to start the chat and co-browsing
 4. Click the link that appeared in the help desk on the support rep computer
+
+You can now chat, see the other person's mouse moving, click links (e.g. the menu), fill out text fields (e.g. the search bars at the top)
