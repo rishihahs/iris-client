@@ -22,3 +22,6 @@ Works best with two computers (or screens), with one representing citizen and th
 4. Click the link that appeared in the help desk on the support rep computer
 
 You can now chat, see the other person's mouse moving, click links (e.g. the menu), fill out text fields (e.g. the search bars at the top)
+
+Screencast:
+http://vimeo.com/79154679
